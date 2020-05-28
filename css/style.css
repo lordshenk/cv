@@ -1,0 +1,195 @@
+body {
+	font-family: 'Muli', sans-serif;
+	color: 	#292b2c;
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.bg {
+	height: 100vh;
+	position: relative;
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-position: top;
+	transition: all 0.5s;
+}
+@media (max-width: 576px) {
+	.bg {
+		background-size: 150%;
+	}
+}
+
+.bg .col {
+	text-align: center;
+}
+.bg .col img {
+	width: 15px;
+	margin-right: 10px;
+	filter: invert(100%) sepia(1%) saturate(345%) hue-rotate(235deg) brightness(118%) contrast(86%);
+}
+@media (max-width: 576px) {
+	.bg .row p:first-child {
+		font-size: 30px;
+		padding: 3px;
+	}
+}
+
+.about button a {
+	text-decoration: none;
+	color: inherit;
+}
+
+@media (min-width: 576px) {
+	.about button {
+		height: 50px;
+	}
+}
+
+.about h2, .about h5 {
+	font-weight: 600;
+}
+h2 span {
+	color: #00b9d6;
+}
+
+.about-btn button {
+	background-color: #00b9d6;
+	box-shadow: 0px 10px 40px -10px rgba(0, 185, 214, 0.5);
+	transition: all 0.5s;
+	border-radius: 30px;
+}
+.about-btn button:hover {
+	background-color: #fff;
+	color: #00b9d6 !important;
+	box-shadow: 0px 10px 40px -10px rgba(0, 185, 214, 0.2);
+}
+
+.skills .row p {
+	padding: 13px 50px;
+	margin: 15px 20px;
+	background-color: #00b9d6;
+	border-radius: 30px;
+	box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.7);
+	transition: all 0.5s, padding 0.7s;
+}
+.skills .row p:hover,
+.skills .row p:focus {
+	padding: 13px 60px;
+	box-shadow: 0px 10px 20px -5px rgba(0, 185, 214, 0.7);
+}
+@media (max-width: 576px) {
+	.skills .row p {
+		padding: 8px 30px;
+		margin: 10px 5px;
+		background-color: #00b9d6;
+		border-radius: 30px;
+		box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.7);
+		transition: all 0.5s, padding 0.7s;
+	}
+	.skills .row p:hover,
+	.skills .row p:focus {
+		padding: 8px 40px;
+		box-shadow: 0px 10px 20px -5px rgba(0, 185, 214, 0.7);
+	}
+}
+
+.project .row div {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.project .row div div {
+	box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.3);
+	transition: all 0.7s;
+}
+.project .row div div img {
+	width: 100%;
+	height: 100%;
+	transition: all 0.7s;
+}
+
+.project .row div div:hover {
+	box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 1);
+}
+.project .row div:hover img {
+	border-radius: 5px;
+	background-color: #fff !important;
+	transform: scale(1.05);
+}
+.contact img {
+	width: 25px;
+	margin-right: 20px;
+	filter: contrast(.6);
+
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 0;
+	opacity: 0;
+	overflow: hidden;
+	background-color: #ddde;
+	transition: all 0.5s;
+}
+.openBtn {
+	position: fixed;
+	top: 2%;
+	right: 1%;
+}
+.openBtn {
+	background-color: #0000;
+}
+.openBtn:focus {
+	box-shadow: none;
+}
+.openBtn img {
+	filter: contrast(.5);
+	width: 40px;
+}
+@media (max-width: 576px) {
+	.openBtn img {
+		width: 30px;
+	}
+}
+
+.avatar img {
+	position: relative;
+	top: 5%;
+	border: 4px solid #eee;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+
+@media (max-width: 576px) {
+	.avatar img {
+		width: 100px;
+		height: 100px;
+	}
+	.overlay .name {
+		font-size: 20px;
+		padding-top: 10px;
+	}
+	.content-menu a {
+		font-size: 18px;
+	}
+}
+
+.content-menu a {
+	color: #292b2c;
+	font-size: 20px;
+	margin: 10px 0;
+}
