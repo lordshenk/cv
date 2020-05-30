@@ -9,8 +9,11 @@ html, body {
 	overflow-x: hidden;
 	width: 100%;
 }
-
+.container-fluid {
+	position: relative;
+}
 .container {
+	position: relative;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -19,7 +22,7 @@ html, body {
 	position: relative;
 	background-image: url('../img/bg.jpg');
 	background-size: cover;
-	background-position: top;
+	background-position: left top;
 	transition: all 0.5s;
 }
 @media (max-width: 576px) {
@@ -192,4 +195,27 @@ h2 span {
 	color: #292b2c;
 	font-size: 20px;
 	margin: 10px 0;
+}
+
+.load {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 9999;
+}
+
+@media (min-width: 768px) {
+	.load img {
+		max-width: 20%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.load img {
+		max-width: 10%;
+	}
 }
