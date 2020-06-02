@@ -4,7 +4,6 @@ const overlay = document.getElementsByClassName('overlay')[0];
 const bg = document.getElementsByClassName('bg')[0];
 const load = document.getElementsByClassName('load')[0];
 
-
 let close = () => {
 	overlay.style.width = '0';
 	overlay.style.opacity = '0';
@@ -31,7 +30,7 @@ window.onscroll = () => {
 	bg.style.backgroundPosition = `0px ${Math.round(value*-0.1)}px`;
 }
 body.onload = () => {
-	load.remove();
+	setTimeout(() => load.remove(), 1000);
 }
 
 

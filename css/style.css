@@ -9,6 +9,9 @@ html, body {
 	overflow-x: hidden;
 	width: 100%;
 }
+body::-webkit-scrollbar {
+	display: none;
+}
 .container-fluid {
 	position: relative;
 }
@@ -66,14 +69,28 @@ h2 span {
 
 .about-btn button {
 	background-color: #00b9d6;
-	box-shadow: 0px 10px 40px -10px rgba(0, 185, 214, 0.5);
+	box-shadow: 0px 10px 40px -10px rgba(0, 185, 214, 0.3);
 	transition: all 0.5s;
 	border-radius: 30px;
 }
-.about-btn button:hover {
+.about-btn button:hover,
+.about-btn button:focus {
 	background-color: #fff;
 	color: #00b9d6 !important;
-	box-shadow: 0px 10px 40px -10px rgba(0, 185, 214, 0.2);
+	box-shadow: 0px 10px 40px -10px rgba(0, 185, 214, 0.3);
+}
+
+.quote p:first-child {
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
+
+@media (max-width: 576px) {
+	.quote p:first-child {
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
 }
 
 .skills .row p {
@@ -81,13 +98,14 @@ h2 span {
 	margin: 15px 20px;
 	background-color: #00b9d6;
 	border-radius: 30px;
-	box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.7);
-	transition: all 0.5s, padding 0.7s;
+	box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.3);
+	transition: all 0.7s;
 }
 .skills .row p:hover,
 .skills .row p:focus {
-	padding: 13px 60px;
-	box-shadow: 0px 10px 20px -5px rgba(0, 185, 214, 0.7);
+	background-color: #fff;
+	color: #00b9d6 !important;
+	box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.7);
 }
 @media (max-width: 576px) {
 	.skills .row p {
@@ -95,13 +113,14 @@ h2 span {
 		margin: 10px 5px;
 		background-color: #00b9d6;
 		border-radius: 30px;
-		box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.7);
-		transition: all 0.5s, padding 0.7s;
+		box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.3);
+		transition: all 0.7s;
 	}
 	.skills .row p:hover,
 	.skills .row p:focus {
-		padding: 8px 40px;
-		box-shadow: 0px 10px 20px -5px rgba(0, 185, 214, 0.7);
+		background-color: #fff;
+		color: #00b9d6 !important;
+		box-shadow: 0px 10px 30px -10px rgba(0, 185, 214, 0.7);
 	}
 }
 
@@ -109,26 +128,64 @@ h2 span {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
-	border-radius: 5px;
 }
 .project .row div div {
-	box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.3);
 	transition: all 0.7s;
+}
+.project .row div div {
+	width: 100%;
+	height: 100%;
 }
 .project .row div div img {
 	width: 100%;
 	height: 100%;
-	transition: all 0.7s;
+	transition: all 0.5s;
 }
 
-.project .row div div:hover {
-	box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 1);
+.project .row div div div {
+	display: flex;
+	align-items: center;
+	padding: 0 5% 0;
+	text-transform: uppercase;
+	width: 100%;
+	height: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #00b9d6;
+	background: #fff;
+	transition: height ease-out 0.3s;
+	z-index: 2999;
 }
-.project .row div:hover img {
-	border-radius: 5px;
-	background-color: #fff !important;
-	transform: scale(1.05);
+.project .row div div div p {
+	margin-bottom: 0;
+	margin-right: auto;
 }
+.project .row div div div i {
+	padding: 0 0 0 15px;
+}
+.project .row a {
+	color: #00b9d6;
+}
+
+.project .row div:hover div img {
+	filter: brightness(0.7);
+}
+
+.project .row div:hover div div {
+	height: 25%;
+}
+.project .row a:hover {
+	color: #00b9d6;
+}
+
+@media (max-width: 576px) {
+	.project .row div div {
+		font-size: 16px;
+	}
+}
+
 .contact img {
 	width: 25px;
 	margin-right: 20px;
@@ -144,8 +201,9 @@ h2 span {
 	width: 0;
 	opacity: 0;
 	overflow: hidden;
-	background-color: #ddde;
+	background-color: #fff;
 	transition: all 0.5s;
+	box-shadow: 0 0 15px #0005;
 }
 .openBtn {
 	position: fixed;
@@ -179,12 +237,12 @@ h2 span {
 
 @media (max-width: 576px) {
 	.avatar img {
-		width: 100px;
-		height: 100px;
+		width: 120px;
+		height: 120px;
 	}
 	.overlay .name {
-		font-size: 20px;
-		padding-top: 10px;
+		font-size: 18px;
+		padding-top: 0;
 	}
 	.content-menu a {
 		font-size: 18px;
@@ -198,7 +256,7 @@ h2 span {
 }
 
 .load {
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	position: fixed;
 	left: 0;
@@ -206,6 +264,7 @@ h2 span {
 	overflow: hidden;
 	background-color: #fff;
 	z-index: 9999;
+	transition: all 1s;
 }
 
 @media (min-width: 768px) {
