@@ -25,10 +25,10 @@ overlay.onclick = (e) => {
 	close();
 }
 
-window.onscroll = () => {
-	let value = window.scrollY;
-	bg.style.backgroundPosition = `0px ${Math.round(value*-0.1)}px`;
-}
+// window.onscroll = () => {
+// 	let value = window.scrollY;
+// 	bg.style.backgroundPosition = `0px ${Math.round(value*-0.1)}px`;
+// }
 body.onload = () => {
 	setTimeout(() => load.remove(), 1000);
 }
