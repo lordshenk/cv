@@ -11,13 +11,7 @@ let close = () => {
 
 
 openBtn.onclick = () => {
-	if (screen.width <= 576) {
-		overlay.style.width = '100%';
-	} else if (screen.width <= 992) {
-		overlay.style.width = '50%';
-	} else {
-		overlay.style.width = '40%';
-	}
+	overlay.style.width = '100%';
 	overlay.style.opacity = '1';
 }
 
@@ -25,12 +19,8 @@ overlay.onclick = (e) => {
 	close();
 }
 
-// window.onscroll = () => {
-// 	let value = window.scrollY;
-// 	bg.style.backgroundPosition = `0px ${Math.round(value*-0.1)}px`;
-// }
 body.onload = () => {
-	setTimeout(() => load.remove(), 1000);
+	load.remove();
 }
 
 

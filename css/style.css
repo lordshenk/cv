@@ -3,6 +3,7 @@ body {
 	color: 	#292b2c;
 	padding: 0;
 	margin: 0;
+	width: 100%;
 }
 html, body {
 	scroll-behavior: smooth;
@@ -49,6 +50,12 @@ body::-webkit-scrollbar {
 	}
 }
 
+.about img {
+	height: 300px;
+	object-fit: cover;
+	object-position: center top;
+	box-shadow: 0px 5px 30px -10px #0003;
+}
 .about button a {
 	text-decoration: none;
 	color: inherit;
@@ -193,18 +200,6 @@ h2 span {
 
 }
 
-.overlay {
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 100vh;
-	width: 0;
-	opacity: 0;
-	overflow: hidden;
-	background-color: #fff;
-	transition: all 0.5s;
-	box-shadow: 0 0 15px #0005;
-}
 .openBtn {
 	position: fixed;
 	top: 2%;
@@ -226,33 +221,70 @@ h2 span {
 	}
 }
 
-.avatar img {
-	position: relative;
-	top: 5%;
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 0;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #fff;
+	transition: all 0.5s;
+	box-shadow: 0 0 15px #0005;
+}
+/*.overlay > div {
+	position: fixed;
+	padding-top: 20%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}*/
+/*.overlay img {
+	position: fixed;
+	top: 17%;
 	border: 4px solid #eee;
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
-}
+}*/
+/*.overlay > div > div {
+	position: absolute;
+}*/
+/*.overlay .name {
+	font-size: 30px;
+	margin-bottom: 3%;
+}*/
 
+.content-menu {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content-menu a {
+	white-space: nowrap;
+	color: #292b2c;
+	font-size: 25px;
+	margin: 20px 0;
+}
 @media (max-width: 576px) {
-	.avatar img {
+	/*.overlay img {
 		width: 120px;
 		height: 120px;
-	}
-	.overlay .name {
+	}*/
+	/*.content-menu a {
 		font-size: 18px;
-		padding-top: 0;
-	}
-	.content-menu a {
-		font-size: 18px;
-	}
-}
-
-.content-menu a {
-	color: #292b2c;
-	font-size: 20px;
-	margin: 10px 0;
+	}*/
 }
 
 .load {
