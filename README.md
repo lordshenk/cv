@@ -1,5 +1,3 @@
-## Personal Website
-***
-#### Built with JS, HTML, CSS
-
-[Website](https://lordshenk.github.io/cv/)
+## Personal Website  
+Built using JS, HTML, CSS and Bootstrap  
+### [View Website](https://lordshenk.github.io/cv/)
