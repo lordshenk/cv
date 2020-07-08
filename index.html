@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,14 @@
 		<div class="container h-100 px-0">
 		<div class="row h-100">
 			<div class="col col-12 text-left d-flex flex-column justify-content-center">
-				<p class="text-light display-4 my-0">I'M DUY KHANH</p>
-				<p class="text-light mb-0 mx-1 h5">A Developer</p>
+				<p class="text-dark display-4 my-0">I'M DUY KHANH</p>
+				<p class="text-dark mb-0 mx-1 h5">A Front-end Developer</p>
 				<div class="mt-3">
-					<a href="https://www.facebook.com/khanh2909/" target="_blank"><img src="./img/facebook.svg"></a>
-					<a href="https://github.com/lordshenk" target="_blank"><img src="./img/github.svg"></a>
-					<a href="https://www.instagram.com/duy_kkhanh/" target="_blank"><img src="./img/instagram.svg"></a>
-					<a href="https://www.linkedin.com/in/duykhanh99/" target="_blank"><img src="./img/linkedin.svg"></a>
+					<button class="btn contact">
+						<a href="#contact" class="d-inline-block w-100 h-100 text-light">
+							Contact Me
+						</a>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -34,9 +35,11 @@
 
 	<div class="container about mt-5 mb-5" id="about">
 		<div class="row">
-			<div class="col-12 col-lg-6 mt-5 mb-5"><img class="w-100 rounded" src="./img/about.jpeg"></div>
-			<div class="col-12 col-lg-6 mb-3">
-				<h2 class="mt-5 mb-3">About <span>Me</span></h2>
+			<div class="col col-12 d-none d-lg-block col-lg-6 mt-md-5 mb-md-5 d-lg-flex justify-content-center align-items-center">
+				<img class="rounded" src="./img/about-3.svg">
+			</div>
+			<div class="col col-12 col-lg-6 mb-3">
+				<h2 class="mt-3 mt-lg-5 mb-3">About <span>Me</span></h2>
 				<h5>Hello I'm Duy Khanh</h5>
 				<div>I'm a web developer. 
 					Web development is my passion and I want to become a good developer in the future.
@@ -44,6 +47,9 @@
 					and started learning web development from 2020. 
 					Javascript is my favorite programming language, so i always want to learn more about it.
 					I am also willing to learn and use the new technologies needed for the job.</div>
+			</div>
+			<div class="col col-12 d-lg-none mt-4 d-flex justify-content-center align-items-center">
+				<img class="rounded" src="./img/about-3.svg">
 			</div>
 		</div>
 		<div class="row">
@@ -55,12 +61,12 @@
 		<div class="row mt-3 mb-5">
 			<div class="col-12 col-sm-6 d-flex w-100 about-btn justify-content-center">
 				<button class="btn btn-sm-lg text-light border-0 w-sm-50 ml-sm-auto mb-3 w-50">
-					<a href='https://i.topcv.vn/buiduykhanh?ref=3018787' target="_blank" class="d-inline-block w-100">View My CV</a>
+					<a href='https://i.topcv.vn/buiduykhanh?ref=3018787' target="_blank" class="d-inline-flex w-100 h-100 justify-content-center align-items-center">View My CV</a>
 			</button>
 			</div>
 			<div class="col-12 col-sm-6 d-flex w-100 about-btn justify-content-center">
 				<button class="btn btn-sm-lg text-light border-0 w-sm-50 mb-3 mr-sm-auto w-50">
-					<a href="#contact" class="d-inline-block w-100">Send Message</a>
+					<a href="#contact" class="d-inline-flex h-100 w-100 justify-content-center align-items-center">Contact Me</a>
 				</button>
 			</div>
 		</div>
@@ -75,119 +81,122 @@
 			</div>
 		</div>
 		<div class="row justify-content-center my-5">
-			<div class="col col-lg-9 d-flex flex-wrap justify-content-center text-light">
-				<p>Javascript</p>
-				<p>CSS</p>
-				<p>HTML</p>
-				<p>NodeJs</p>
-				<p>ExpressJs</p>
-				<p>Bootstrap</p>
-				<!-- <p>JQuery</p> -->
-				<p>Git</p>
-				<p>MongoDB</p>
-				<p>ReactJs</p>
+			<div class="col col-12 col-lg-6 order-1 order-lg-0 d-flex flex-row flex-wrap">
+				<div class="mr-5">
+					<h6 class="text-light">PROGRAMMING LANGUAGES</h6>
+					<p><span>HTML</span><span>CSS</span><span>Javascript</span></p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">FRAMEWORKS & PLATFORMS</h6>
+					<p><span>ReactJs</span><span>NodeJs</span><span>Bootstrap</span></p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">VERSION CONTROL</h6>
+					<p><span>Git</span><span>Github</span></p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">DATABASE</h6>
+					<p>MongoDB</p>
+				</div>
+			</div>
+			<div class="col col-12 col-lg-6 d-flex justify-content-center align-items-center order-0 order-lg-1 mb-5 mb-lg-0">
+				<img src="./img/skill.svg">
 			</div>
 		</div>
 	</div>
-	<div class="container project mb-5" id="project">
-		<h2 class="pt-sm-5">My <span>Projects</span></h2>
+	<div class="container projects mb-5" id="project">
+		<h2 >My <span>Projects</span></h2>
 		<div class="row my-4">
 			<div class="col col-12">
 				Some small projects that i have completed
 			</div>
 		</div>
 		<div class="row justify-content-between">
-			<div class="col-12 col-lg-4 my-3">
-				<div>
-					<img src="https://picsum.photos/600/400" alt="project">
-					<div>
-						<p>This is content</p>
-						<a href="https://google.com.vn" target="_blank"><i class="fas fa-eye"></i></a>
-						<i class="fas fa-code"></i>
-					</div>
+			<div class="col col-12 col-lg-6 d-flex justify-content-center align-items-center my-5">
+				<img alt='project' src='./img/project.svg' />
+			</div>
+			<div class="col col-12 col-lg-6 d-flex flex-row flex-wrap">
+				<div class="mr-5">
+					<h6 class="text-light">SHOP SKIN LIEN QUAN</h6>
+					<p>Shop build using ReactJs, ExpressJs, MongoDB</p>
+					<p>
+						<span><a target="_blank" href="#">Source Code</a></span>
+						<br class="d-sm-none" />
+						<span><a target="_blank" href="#">View Project</a></span>
+					</p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">SOCIAL NETWORK</h6>
+					<p>Social web build using ReactJs</p>
+					<p>
+						<span><a target="_blank" href="https://github.com/lordshenk/shen-social">Source Code</a></span>
+						<br class="d-sm-none" />
+						<span><a target="_blank" href="https://shen-social.netlify.app/">View Project</a></span>
+					</p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">SHEN BLOG</h6>
+					<p>Blog build using ReactJs</p>
+					<p>
+						<span><a target="_blank" href="https://github.com/lordshenk/shen-blog">Source Code</a></span>
+						<br class="d-sm-none" />
+						<span><a target="_blank" href="https://shen-blog.herokuapp.com/">View Project</a></span>
+					</p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">INSTAGRAM HOME PAGE</h6>
+					<p>Cloning Instagram home page</p>
+					<p>
+						<span><a target="_blank" href="https://github.com/lordshenk/insta-clone">Source Code</a></span>
+						<br class="d-sm-none" />
+						<span><a target="_blank" href="https://lordshenk.github.io/insta-clone/">View Project</a></span>
+					</p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">DAILIST</h6>
+					<p>Todolist build using ReactJs</p>
+					<p>
+						<span><a target="_blank" href="https://github.com/lordshenk/dailist">Source Code</a></span>
+						<br class="d-sm-none" />
+						<span><a target="_blank" href="https://dailist.netlify.app/">View Project</a></span>
+					</p>
+				</div>
+				<div class="mr-5">
+					<h6 class="text-light">WEDDING PAGE</h6>
+					<p>wedding page build using HTML, CSS</p>
+					<p>
+						<span><a target="_blank" href="https://github.com/lordshenk/wedding-page">Source Code</a></span>
+						<br class="d-sm-none" />
+						<span><a target="_blank" href="https://lordshenk.github.io/wedding-page/">View Project</a></span>
+					</p>
 				</div>
 			</div>
-			<div class="col-12 col-lg-4 my-3">
-				<div>
-					<img src="https://picsum.photos/600/400" alt="project">
-					<div>
-						<p>This is content</p>
-						<i class="fas fa-eye"></i>
-						<i class="fas fa-code"></i>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-lg-4 my-3">
-				<div>
-					<img src="https://picsum.photos/600/400" alt="project">
-					<div>
-						<p>This is content</p>
-						<i class="fas fa-eye"></i>
-						<i class="fas fa-code"></i>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-lg-4 my-3">
-				<div>
-					<img src="https://picsum.photos/600/400" alt="project">
-					<div>
-						<p>This is content</p>
-						<i class="fas fa-eye"></i>
-						<i class="fas fa-code"></i>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-lg-4 my-3">
-				<div>
-					<img src="https://picsum.photos/600/400" alt="project">
-					<div>
-						<p>This is content</p>
-						<i class="fas fa-eye"></i>
-						<i class="fas fa-code"></i>
-					</div>
-				</div>
-			</div>
-			<div class="col-12 col-lg-4 my-3">
-				<div>
-					<img src="https://picsum.photos/600/400" alt="project">
-					<div>
-						<p>This is content</p>
-						<i class="fas fa-eye"></i>
-						<i class="fas fa-code"></i>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</div>
-	<div class="container contact py-5" id="contact">
-		<h2 class="">Contact <span>Me</span></h2>
-		<span></span>
-		<div class="my-3">Email: duykhanh29091999@gmail.com</div>
-		
+	<div class="container contact-me pb-5 pt-5" id="contact">
+		<h2 class="text-light">Contact <span>Me</span></h2>
+		<div title="email" class="my-3 text-light d-inline-block">
+			<img alt='arrow' src='./img/arrow.svg' class="ml-2" />duykhanh29091999@gmail.com
+		</div>
 		<div class="mt-4">
-			<a href="https://www.facebook.com/khanh2909/" target="_blank"><img src="./img/facebook.svg"></a>
-			<a href="https://github.com/lordshenk" target="_blank"><img src="./img/github.svg"></a>
-			<a href="https://www.instagram.com/duy_kkhanh/" target="_blank"><img src="./img/instagram.svg"></a>
-			<a href="https://www.linkedin.com/in/duykhanh99/" target="_blank"><img src="./img/linkedin.svg"></a>
+			<a title="facebook" href="https://www.facebook.com/khanh2909/" target="_blank"><img src="./img/facebook.svg"></a>
+			<a title="github" href="https://github.com/lordshenk" target="_blank"><img src="./img/github.svg"></a>
+			<a title="instagramn" href="https://www.instagram.com/duy_kkhanh/" target="_blank"><img src="./img/instagram.svg"></a>
+			<a title="linkedin" href="https://www.linkedin.com/in/duykhanh99/" target="_blank"><img src="./img/linkedin.svg"></a>
 		</div>
 	</div>
+
 	<button class="btn openBtn"><img src="./img/menu.png"></button>
 
 	<div class="overlay">
-		<!-- <div> -->
-			<!-- <img src="./img/avatar.jpeg">
-			<div class="name">Bui Duy Khanh</div> -->
-			<div class="content-menu">
-				<a href="#about">About Me</a>
-				<a href="#resume">Resume</a>
-				<a href="#project">Projects</a>
-				<a href="#contact">Contact Me</a>
-			</div>
-		<!-- </div> -->
+		<div class="content-menu">
+			<a href="#about">About Me</a>
+			<a href="#resume">Resume</a>
+			<a href="#project">Projects</a>
+			<a href="#contact">Contact Me</a>
+		</div>
 	</div>
 
-	
 	<script type="text/javascript" src="./script/script.js"></script>
 </body>
 </html>
